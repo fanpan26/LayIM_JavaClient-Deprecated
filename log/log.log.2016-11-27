@@ -1,0 +1,515 @@
+2016-11-27 22:49:35  [ http-bio-8080-exec-1:0 ] - [ INFO ]  base
+2016-11-27 22:49:35  [ http-bio-8080-exec-1:3 ] - [ INFO ]  
+2016-11-27 22:50:29  [ http-bio-8080-exec-2:54577 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 22:50:29  [ http-bio-8080-exec-2:54579 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 22:50:29  [ http-bio-8080-exec-2:54581 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@183e090f
+2016-11-27 22:50:29  [ http-bio-8080-exec-2:54583 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 22:50:29  [ http-bio-8080-exec-2:54593 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@75ee4cf5
+2016-11-27 22:50:29  [ http-bio-8080-exec-2:54593 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@11ac049a
+2016-11-27 22:50:30  [ http-bio-8080-exec-2:54657 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 22:50:30  [ http-bio-8080-exec-2:54657 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 22:50:30  [ http-bio-8080-exec-2:54658 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 22:50:31  [ http-bio-8080-exec-10:55766 ] - [ INFO ]  base
+2016-11-27 22:50:31  [ http-bio-8080-exec-10:55768 ] - [ INFO ]  
+2016-11-27 22:57:17  [ http-bio-8080-exec-5:0 ] - [ INFO ]  base
+2016-11-27 22:57:17  [ http-bio-8080-exec-5:4 ] - [ INFO ]  
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6471 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6474 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6478 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@3cd55553
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6481 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6487 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@160d22d
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6487 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@38bd778e
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6551 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6551 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 22:57:23  [ http-bio-8080-exec-2:6552 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 22:57:25  [ http-bio-8080-exec-5:8041 ] - [ INFO ]  base
+2016-11-27 22:57:25  [ http-bio-8080-exec-5:8041 ] - [ INFO ]  
+2016-11-27 22:58:01  [ http-bio-8080-exec-1:43951 ] - [ INFO ]  base
+2016-11-27 22:58:01  [ http-bio-8080-exec-1:43952 ] - [ INFO ]  12687
+2016-11-27 22:58:16  [ http-bio-8080-exec-1:59409 ] - [ INFO ]  base
+2016-11-27 22:58:16  [ http-bio-8080-exec-1:59410 ] - [ INFO ]  12687
+2016-11-27 22:58:18  [ http-bio-8080-exec-1:61789 ] - [ INFO ]  base
+2016-11-27 22:58:18  [ http-bio-8080-exec-1:61789 ] - [ INFO ]  12687
+2016-11-27 22:58:21  [ http-bio-8080-exec-1:64092 ] - [ INFO ]  base
+2016-11-27 22:58:21  [ http-bio-8080-exec-1:64092 ] - [ INFO ]  12687
+2016-11-27 22:58:23  [ http-bio-8080-exec-1:65960 ] - [ INFO ]  base
+2016-11-27 22:58:23  [ http-bio-8080-exec-1:65961 ] - [ INFO ]  12687
+2016-11-27 22:58:48  [ http-bio-8080-exec-5:90868 ] - [ INFO ]  base
+2016-11-27 22:58:48  [ http-bio-8080-exec-5:90868 ] - [ INFO ]  12687
+2016-11-27 22:59:45  [ http-bio-8080-exec-3:148390 ] - [ INFO ]  base
+2016-11-27 22:59:45  [ http-bio-8080-exec-3:148391 ] - [ INFO ]  12687
+2016-11-27 22:59:47  [ http-bio-8080-exec-3:150109 ] - [ INFO ]  base
+2016-11-27 22:59:47  [ http-bio-8080-exec-3:150109 ] - [ INFO ]  12687
+2016-11-27 22:59:48  [ http-bio-8080-exec-3:151732 ] - [ INFO ]  base
+2016-11-27 22:59:48  [ http-bio-8080-exec-3:151733 ] - [ INFO ]  12687
+2016-11-27 22:59:50  [ http-bio-8080-exec-3:153386 ] - [ INFO ]  base
+2016-11-27 22:59:50  [ http-bio-8080-exec-3:153386 ] - [ INFO ]  12687
+2016-11-27 23:01:18  [ http-bio-8080-exec-9:0 ] - [ INFO ]  base
+2016-11-27 23:01:18  [ http-bio-8080-exec-9:5 ] - [ INFO ]  12687
+2016-11-27 23:01:24  [ http-bio-8080-exec-10:6175 ] - [ INFO ]  base
+2016-11-27 23:01:24  [ http-bio-8080-exec-10:6175 ] - [ INFO ]  12687
+2016-11-27 23:01:24  [ http-bio-8080-exec-5:6221 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:01:24  [ http-bio-8080-exec-5:6223 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:01:24  [ http-bio-8080-exec-5:6226 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@537439b3
+2016-11-27 23:01:24  [ http-bio-8080-exec-5:6227 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:01:24  [ http-bio-8080-exec-5:6234 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@6e6a1da7
+2016-11-27 23:01:24  [ http-bio-8080-exec-5:6234 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@12941ac9
+2016-11-27 23:01:25  [ http-bio-8080-exec-5:6318 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:01:25  [ http-bio-8080-exec-5:6319 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:01:25  [ http-bio-8080-exec-5:6319 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:03:25  [ http-bio-8080-exec-5:0 ] - [ INFO ]  base
+2016-11-27 23:03:25  [ http-bio-8080-exec-5:5 ] - [ INFO ]  12687
+2016-11-27 23:03:31  [ http-bio-8080-exec-5:5819 ] - [ INFO ]  base
+2016-11-27 23:03:31  [ http-bio-8080-exec-5:5819 ] - [ INFO ]  12687
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5868 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5870 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5875 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@7a49cba0
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5879 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5893 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@33131f7c
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5894 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@2459f772
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5980 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5981 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:03:31  [ http-bio-8080-exec-2:5981 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:04:35  [ http-bio-8080-exec-4:69967 ] - [ INFO ]  base
+2016-11-27 23:04:35  [ http-bio-8080-exec-4:69968 ] - [ INFO ]  12687
+2016-11-27 23:04:45  [ http-bio-8080-exec-4:80316 ] - [ INFO ]  base
+2016-11-27 23:04:45  [ http-bio-8080-exec-4:80317 ] - [ INFO ]  12687
+2016-11-27 23:04:47  [ http-bio-8080-exec-4:82278 ] - [ INFO ]  base
+2016-11-27 23:04:47  [ http-bio-8080-exec-4:82278 ] - [ INFO ]  12687
+2016-11-27 23:04:49  [ http-bio-8080-exec-4:83544 ] - [ INFO ]  base
+2016-11-27 23:04:49  [ http-bio-8080-exec-4:83544 ] - [ INFO ]  12687
+2016-11-27 23:04:50  [ http-bio-8080-exec-4:84746 ] - [ INFO ]  base
+2016-11-27 23:04:50  [ http-bio-8080-exec-4:84747 ] - [ INFO ]  12687
+2016-11-27 23:04:51  [ http-bio-8080-exec-4:85998 ] - [ INFO ]  base
+2016-11-27 23:04:51  [ http-bio-8080-exec-4:85999 ] - [ INFO ]  12687
+2016-11-27 23:04:52  [ http-bio-8080-exec-4:87255 ] - [ INFO ]  base
+2016-11-27 23:04:52  [ http-bio-8080-exec-4:87256 ] - [ INFO ]  12687
+2016-11-27 23:04:53  [ http-bio-8080-exec-4:88367 ] - [ INFO ]  base
+2016-11-27 23:04:53  [ http-bio-8080-exec-4:88368 ] - [ INFO ]  12687
+2016-11-27 23:04:55  [ http-bio-8080-exec-4:89670 ] - [ INFO ]  base
+2016-11-27 23:04:55  [ http-bio-8080-exec-4:89670 ] - [ INFO ]  12687
+2016-11-27 23:04:56  [ http-bio-8080-exec-4:90876 ] - [ INFO ]  base
+2016-11-27 23:04:56  [ http-bio-8080-exec-4:90876 ] - [ INFO ]  12687
+2016-11-27 23:04:57  [ http-bio-8080-exec-4:92038 ] - [ INFO ]  base
+2016-11-27 23:04:57  [ http-bio-8080-exec-4:92039 ] - [ INFO ]  12687
+2016-11-27 23:04:58  [ http-bio-8080-exec-4:93163 ] - [ INFO ]  base
+2016-11-27 23:04:58  [ http-bio-8080-exec-4:93163 ] - [ INFO ]  12687
+2016-11-27 23:04:59  [ http-bio-8080-exec-4:94299 ] - [ INFO ]  base
+2016-11-27 23:04:59  [ http-bio-8080-exec-4:94299 ] - [ INFO ]  12687
+2016-11-27 23:05:00  [ http-bio-8080-exec-4:95370 ] - [ INFO ]  base
+2016-11-27 23:05:00  [ http-bio-8080-exec-4:95370 ] - [ INFO ]  12687
+2016-11-27 23:05:02  [ http-bio-8080-exec-4:96426 ] - [ INFO ]  base
+2016-11-27 23:05:02  [ http-bio-8080-exec-4:96426 ] - [ INFO ]  12687
+2016-11-27 23:05:03  [ http-bio-8080-exec-3:97542 ] - [ INFO ]  base
+2016-11-27 23:05:03  [ http-bio-8080-exec-3:97542 ] - [ INFO ]  12687
+2016-11-27 23:05:04  [ http-bio-8080-exec-2:98627 ] - [ INFO ]  base
+2016-11-27 23:05:04  [ http-bio-8080-exec-2:98627 ] - [ INFO ]  12687
+2016-11-27 23:05:05  [ http-bio-8080-exec-2:99643 ] - [ INFO ]  base
+2016-11-27 23:05:05  [ http-bio-8080-exec-2:99644 ] - [ INFO ]  12687
+2016-11-27 23:05:06  [ http-bio-8080-exec-2:100679 ] - [ INFO ]  base
+2016-11-27 23:05:06  [ http-bio-8080-exec-2:100680 ] - [ INFO ]  12687
+2016-11-27 23:05:07  [ http-bio-8080-exec-2:101635 ] - [ INFO ]  base
+2016-11-27 23:05:07  [ http-bio-8080-exec-2:101635 ] - [ INFO ]  12687
+2016-11-27 23:05:08  [ http-bio-8080-exec-2:102709 ] - [ INFO ]  base
+2016-11-27 23:05:08  [ http-bio-8080-exec-2:102709 ] - [ INFO ]  12687
+2016-11-27 23:05:09  [ http-bio-8080-exec-2:103794 ] - [ INFO ]  base
+2016-11-27 23:05:09  [ http-bio-8080-exec-2:103794 ] - [ INFO ]  12687
+2016-11-27 23:05:10  [ http-bio-8080-exec-2:104931 ] - [ INFO ]  base
+2016-11-27 23:05:10  [ http-bio-8080-exec-2:104931 ] - [ INFO ]  12687
+2016-11-27 23:05:11  [ http-bio-8080-exec-2:105981 ] - [ INFO ]  base
+2016-11-27 23:05:11  [ http-bio-8080-exec-2:105981 ] - [ INFO ]  12687
+2016-11-27 23:05:12  [ http-bio-8080-exec-2:106958 ] - [ INFO ]  base
+2016-11-27 23:05:12  [ http-bio-8080-exec-2:106959 ] - [ INFO ]  12687
+2016-11-27 23:05:13  [ http-bio-8080-exec-2:107859 ] - [ INFO ]  base
+2016-11-27 23:05:13  [ http-bio-8080-exec-2:107860 ] - [ INFO ]  12687
+2016-11-27 23:07:16  [ http-bio-8080-exec-8:0 ] - [ INFO ]  base
+2016-11-27 23:07:16  [ http-bio-8080-exec-8:5 ] - [ INFO ]  12687
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7575 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7577 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7580 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@20d38b22
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7582 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7591 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@2c14f576
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7592 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@33ed94d3
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7665 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7665 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:07:23  [ http-bio-8080-exec-5:7665 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:07:25  [ http-bio-8080-exec-9:9658 ] - [ INFO ]  base
+2016-11-27 23:07:25  [ http-bio-8080-exec-9:9658 ] - [ INFO ]  12687
+2016-11-27 23:09:42  [ http-bio-8080-exec-5:0 ] - [ INFO ]  base
+2016-11-27 23:09:42  [ http-bio-8080-exec-5:10 ] - [ INFO ]  12687
+2016-11-27 23:09:46  [ http-bio-8080-exec-4:4133 ] - [ INFO ]  base
+2016-11-27 23:09:46  [ http-bio-8080-exec-4:4133 ] - [ INFO ]  12687
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4180 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4181 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4184 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@77978dfe
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4185 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4192 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@6e0cc913
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4193 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@5608d201
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4282 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4283 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:09:46  [ http-bio-8080-exec-2:4283 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:10:45  [ http-bio-8080-exec-5:0 ] - [ INFO ]  base
+2016-11-27 23:10:45  [ http-bio-8080-exec-5:8 ] - [ INFO ]  12687
+2016-11-27 23:10:48  [ http-bio-8080-exec-5:3515 ] - [ INFO ]  base
+2016-11-27 23:10:48  [ http-bio-8080-exec-5:3516 ] - [ INFO ]  12687
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3564 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3566 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3574 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@292f7034
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3578 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3592 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@634b002c
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3592 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@f91a907
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3803 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3804 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:10:48  [ http-bio-8080-exec-2:3805 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:14:25  [ http-bio-8080-exec-5:0 ] - [ INFO ]  base
+2016-11-27 23:14:25  [ http-bio-8080-exec-5:2 ] - [ INFO ]  12687
+2016-11-27 23:14:29  [ http-bio-8080-exec-4:3930 ] - [ INFO ]  base
+2016-11-27 23:14:29  [ http-bio-8080-exec-4:3930 ] - [ INFO ]  12687
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:3966 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:3968 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:3971 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@35d67330
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:3973 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:3982 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@1db714b4
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:3983 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@415c45f0
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:4057 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:4058 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:14:29  [ http-bio-8080-exec-2:4058 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:15:17  [ http-bio-8080-exec-5:0 ] - [ INFO ]  base
+2016-11-27 23:15:17  [ http-bio-8080-exec-5:4 ] - [ INFO ]  12687
+2016-11-27 23:15:21  [ http-bio-8080-exec-5:3528 ] - [ INFO ]  base
+2016-11-27 23:15:21  [ http-bio-8080-exec-5:3528 ] - [ INFO ]  12687
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3576 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3577 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3579 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@661a8792
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3581 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3587 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@68efd4ab
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3588 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@49fb3519
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3675 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3676 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:15:21  [ http-bio-8080-exec-2:3676 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:15:24  [ http-bio-8080-exec-2:6741 ] - [ INFO ]  该用户不在线 
+2016-11-27 23:16:06  [ http-bio-8080-exec-1:49437 ] - [ INFO ]  base
+2016-11-27 23:16:06  [ http-bio-8080-exec-1:49438 ] - [ INFO ]  12687
+2016-11-27 23:16:20  [ http-bio-8080-exec-1:63194 ] - [ INFO ]  base
+2016-11-27 23:16:20  [ http-bio-8080-exec-1:63194 ] - [ INFO ]  12687
+2016-11-27 23:18:46  [ http-bio-8080-exec-10:208660 ] - [ INFO ]  base
+2016-11-27 23:18:46  [ http-bio-8080-exec-10:208661 ] - [ INFO ]  10000
+2016-11-27 23:21:54  [ http-bio-8080-exec-9:1 ] - [ INFO ]  base
+2016-11-27 23:21:54  [ http-bio-8080-exec-9:4 ] - [ INFO ]  
+2016-11-27 23:22:26  [ http-bio-8080-exec-5:1 ] - [ INFO ]  base
+2016-11-27 23:22:26  [ http-bio-8080-exec-5:5 ] - [ INFO ]  
+2016-11-27 23:22:32  [ http-bio-8080-exec-6:5926 ] - [ INFO ]  base
+2016-11-27 23:22:32  [ http-bio-8080-exec-6:5927 ] - [ INFO ]  12688
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6029 ] - [ DEBUG ]  All Services successfully started.
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6032 ] - [ DEBUG ]  Creating Cache 'HASHMAP_CONFIGURE' in EhcacheManager.
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6034 ] - [ DEBUG ]  Serializer for <java.lang.String> : org.ehcache.impl.serialization.StringSerializer@7b407337
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6035 ] - [ DEBUG ]  Could not create serializers for HASHMAP_CONFIGURE
+org.ehcache.spi.serialization.UnsupportedTypeException: No serializer found for type 'java.util.Map'
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.getClassFor(DefaultSerializationProvider.java:276)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$TransientProvider.createSerializer(DefaultSerializationProvider.java:167)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider$AbstractProvider.createValueSerializer(DefaultSerializationProvider.java:254)
+	at org.ehcache.impl.internal.spi.serialization.DefaultSerializationProvider.createValueSerializer(DefaultSerializationProvider.java:105)
+	at org.ehcache.core.EhcacheManager.getStore(EhcacheManager.java:462)
+	at org.ehcache.core.EhcacheManager.createNewEhcache(EhcacheManager.java:308)
+	at org.ehcache.core.EhcacheManager.createCache(EhcacheManager.java:257)
+	at org.ehcache.core.EhcacheManager.init(EhcacheManager.java:564)
+	at util.cache.EHCacheUtil.getCacheManager(EHCacheUtil.java:20)
+	at util.cache.LayIMCache.getManager(LayIMCache.java:52)
+	at util.cache.LayIMCache.getHashMapManager(LayIMCache.java:62)
+	at util.cache.LayIMCache.getHashMapCache(LayIMCache.java:66)
+	at util.cache.LayIMCache.get(LayIMCache.java:81)
+	at socket.manager.OnLineUserManager.addUser(OnLineUserManager.java:17)
+	at socket.manager.UserManager.addUser(UserManager.java:40)
+	at socket.LayIMServer.open(LayIMServer.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointBase.doOnOpen(PojoEndpointBase.java:66)
+	at org.apache.tomcat.websocket.pojo.PojoEndpointServer.onOpen(PojoEndpointServer.java:70)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:137)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:666)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6041 ] - [ DEBUG ]  Copier for <java.lang.String> : org.ehcache.impl.copy.IdentityCopier@52d9dd5b
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6041 ] - [ DEBUG ]  Copier for <java.util.Map> : org.ehcache.impl.copy.IdentityCopier@6f55ef66
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6106 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6107 ] - [ INFO ]  Cache 'HASHMAP_CONFIGURE' created in EhcacheManager.
+2016-11-27 23:22:32  [ http-bio-8080-exec-2:6107 ] - [ DEBUG ]  Initialize successful.
+2016-11-27 23:22:48  [ http-bio-8080-exec-6:22154 ] - [ INFO ]  base
+2016-11-27 23:22:48  [ http-bio-8080-exec-6:22155 ] - [ INFO ]  10000
+2016-11-27 23:22:54  [ http-bio-8080-exec-6:28040 ] - [ INFO ]  base
+2016-11-27 23:22:54  [ http-bio-8080-exec-6:28041 ] - [ INFO ]  12687

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="LayIM_JavaClient:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/LayIM_JavaClient_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="LayIM_JavaClient/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LayIM_JavaClient" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
