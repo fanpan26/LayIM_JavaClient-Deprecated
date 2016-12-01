@@ -9,6 +9,7 @@
 ##### 群组聊天，发送图片、文件
 ##### 消息存储
 
+####应用技术：Servlet  JDBC（连接的SQL Server数据库），开发工具 IDEA。（jdk版本神马的我就不清楚了。。。）
 #####备注：此DEMO仅供交流。
 
 ### 图片演示(详情见.NET SignalR版本的README)
