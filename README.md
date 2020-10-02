@@ -1,3 +1,4 @@
+New Java Project.
 ##LayIM2.0 Java WebSocket版本的实现
 
 ##由于layim是收费UI，所以项目源代码中不包含layui的js包，如有需要请到官网了解详情。
@@ -15,3 +16,5 @@
 ### 图片演示(详情见.NET SignalR版本的README)
 
 ### .NET版本 ：https://github.com/fanpan26/LayIM_NetClient
+
+Hope you liked it.
