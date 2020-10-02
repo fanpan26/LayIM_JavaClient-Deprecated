@@ -3,7 +3,7 @@
 ##由于layim是收费UI，所以项目源代码中不包含layui的js包，如有需要请到官网了解详情。
 
 #### LayIM官网 http://www.layui.com/doc/layim.html
-#### 项目说明：基于Jave WebSocket,LayIM2.0实现的web聊天室，功能如下：
+#### 项目说明：基于Jave Web-Socket,LayIM2.0实现的web聊天室，功能如下：
 
 ##### 好友聊天，发送图片、文件
 ##### 群组聊天，发送图片、文件
